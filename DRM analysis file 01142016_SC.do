@@ -1,3 +1,7 @@
+/*test changes jan 27 */
+
+
+
 *Author: Stephanie Chan 
 *Date: January 14 2016
 *********************************************************************************
@@ -369,10 +373,10 @@ set more off
 			binscatter posaff slphours if (dummy >10) , by(dummy) control(id)
 				
 			*happiness from doing chores are most affected by sleep	
-			binscatter posaff slplast if (dummy == 4 | dummy == 5), by(dummy) control(id) ///
+			binscatter posaff slplast if (dummy == 4 | dummy == 5), by(dummy) control(id)) ///
 			ytitle("positive affect") xtitle("hours slept yesterday") ///
 				title("household chores are most affected by sleep") ///
-				legend(lab(1 "preparing food") lab(2 "doing housework")) ///
+				legend(lab(1 "preparing food") lab(2 "doing housework")) 
 				
 				graph export doingchores.eps, replace
 
